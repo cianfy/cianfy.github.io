@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cianfy | Scuola, Tecnologia & Informatica</title>
+    <meta name="description" content="Sito personale di Cianfy. Scopri le mie passioni per la scuola, l'istruzione, la tecnologia e l'informatica.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Animated Gradient Background Overlay -->
+    <div class="bg-gradient"></div>
+    <div class="bg-glow bg-glow-1"></div>
+    <div class="bg-glow bg-glow-2"></div>
+
+    <!-- Navigation Header -->
+    <header class="header">
+        <nav class="nav-container">
+            <a href="#" class="logo">cianfy<span>.io</span></a>
+            <ul class="nav-links">
+                <li><a href="#about" class="nav-link active">Chi Sono</a></li>
+                <li><a href="#passions" class="nav-link">Passioni</a></li>
+                <li><a href="#links" class="nav-link">Risorse & Link</a></li>
+                <li><a href="#contact" class="nav-link">Contatti</a></li>
+            </ul>
+            <div class="menu-toggle" id="mobile-menu">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Hero Section / About -->
+        <section id="about" class="section hero-section active-section">
+            <div class="glass-card hero-card">
+                <div class="hero-header">
+                    <div class="profile-container">
+                        <img src="avatar.jpg" alt="Cianfy Avatar" class="profile-img" onerror="this.src='https://api.dicebear.com/7.x/bottts/svg?seed=cianfy'">
+                        <div class="pulse-ring"></div>
+                    </div>
+                    <div class="hero-intro">
+                        <span class="badge">Benvenuto nel mio spazio</span>
+                        <h1>Ciao, sono <span class="gradient-text">Cianfy</span></h1>
+                        <p class="subtitle">Esploratore digitale con una forte dedizione per l'istruzione, la tecnologia e l'informatica.</p>
+                    </div>
+                </div>
+                <div class="hero-body">
+                    <p>Benvenuto sul mio sito! Questo è il mio spazio personale dove condivido il mio percorso, le mie idee e le risorse che ritengo utili nel mondo della scuola e dello sviluppo tecnologico. Credo fortemente che la tecnologia debba essere uno strumento a supporto della crescita intellettuale e dell'apprendimento.</p>
+                    <div class="hero-buttons">
+                        <a href="#passions" class="btn btn-primary">Scopri le mie passioni <i class="fa-solid fa-arrow-down"></i></a>
+                        <a href="#contact" class="btn btn-secondary">Mettiti in contatto <i class="fa-solid fa-paper-plane"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Passions Section -->
+        <section id="passions" class="section">
+            <h2 class="section-title">Le Mie <span class="gradient-text">Passioni</span></h2>
+            <div class="passions-grid">
+                <!-- Education Card -->
+                <div class="glass-card passion-card scroll-reveal">
+                    <div class="passion-icon education-icon">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                    </div>
+                    <h3>Scuola & Istruzione</h3>
+                    <p>L'istruzione è la chiave per il futuro. Mi affascina lo sviluppo di nuove metodologie didattiche, l'integrazione di strumenti digitali nell'apprendimento quotidiano e la facilitazione dello studio per gli studenti di ogni ordine e grado.</p>
+                    <ul class="passion-bullets">
+                        <li><i class="fa-solid fa-circle-check"></i> Didattica Digitale ed E-Learning</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Condivisione della conoscenza</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Innovazione scolastica</li>
+                    </ul>
+                </div>
+
+                <!-- Tech & CS Card -->
+                <div class="glass-card passion-card scroll-reveal">
+                    <div class="passion-icon tech-icon">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+                    <h3>Tecnologia & Informatica</h3>
+                    <p>La programmazione e il mondo dei computer sono il mio parco giochi. Mi piace esplorare nuovi linguaggi di programmazione, creare applicazioni web utili ed efficaci e comprendere l'architettura dei sistemi che governano il web moderno.</p>
+                    <ul class="passion-bullets">
+                        <li><i class="fa-solid fa-circle-check"></i> Web Development (HTML, CSS, JS)</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Automazioni ed Open Source</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Risoluzione di problemi logici</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects & Resources Section -->
+        <section id="links" class="section">
+            <h2 class="section-title">Progetti & <span class="gradient-text">Risorse</span></h2>
+            <p class="section-subtitle">Una panoramica delle attività didattiche e dei progetti tecnologici realizzati a scuola.</p>
+            
+            <!-- School Projects Grid -->
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="glass-card project-card scroll-reveal">
+                    <div class="project-icon"><i class="fa-solid fa-robot"></i></div>
+                    <h4>Robot segui-linea</h4>
+                    <p>Realizzato con MicroBit e motori servo.</p>
+                    <a href="https://bit.ly/A13-Robot-LFR-Canva" target="_blank" rel="noopener noreferrer" class="project-link">Vedi Progetto <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="glass-card project-card scroll-reveal">
+                    <div class="project-icon"><i class="fa-solid fa-brain"></i></div>
+                    <h4>AI in Classroom</h4>
+                    <p>L'Intelligenza Artificiale nella Next Generation Classroom.</p>
+                    <a href="https://bit.ly/42WMSjg" target="_blank" rel="noopener noreferrer" class="project-link">Vedi Progetto <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="glass-card project-card scroll-reveal">
+                    <div class="project-icon"><i class="fa-brands fa-python"></i></div>
+                    <h4>Mani nel MicroPython</h4>
+                    <p>Sperimentazioni pratiche di programmazione hardware.</p>
+                    <a href="https://bit.ly/IPSEOA_AICA-21_22" target="_blank" rel="noopener noreferrer" class="project-link">Vedi Progetto <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="glass-card project-card scroll-reveal">
+                    <div class="project-icon"><i class="fa-solid fa-microchip"></i></div>
+                    <h4>Arduino CovidiNo</h4>
+                    <p>Un progetto innovativo realizzato nel periodo pandemico.</p>
+                    <a href="https://bit.ly/IPSEOA-AICA-20_21" target="_blank" rel="noopener noreferrer" class="project-link">Vedi Progetto <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="glass-card project-card scroll-reveal">
+                    <div class="project-icon"><i class="fa-solid fa-cube"></i></div>
+                    <h4>Fotogrammetria 3D</h4>
+                    <p>Progetti di fotogrammetria e scansione tridimensionale.</p>
+                    <a href="https://bit.ly/IPSEOA_AICA-19_20" target="_blank" rel="noopener noreferrer" class="project-link">Vedi Progetto <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="glass-card project-card scroll-reveal">
+                    <div class="project-icon"><i class="fa-solid fa-utensils"></i></div>
+                    <h4>Arduino in Cucina</h4>
+                    <p>L'integrazione di sensori e automazione nel settore alberghiero.</p>
+                    <a href="https://bit.ly/IPSEOA_AICA-18_19" target="_blank" rel="noopener noreferrer" class="project-link">Vedi Progetto <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Project 7 -->
+                <div class="glass-card project-card scroll-reveal">
+                    <div class="project-icon"><i class="fa-solid fa-city"></i></div>
+                    <h4>Minecraft Education - Termoli Smart City</h4>
+                    <p>Progetto e relazione sull'innovazione e la digitalizzazione urbana.</p>
+                    <div class="project-links-group" style="display: flex; gap: 1rem; width: 100%; margin-top: auto;">
+                        <a href="https://bit.ly/4bqcsna?r=lp&m=Mn6hiC4rVDS" target="_blank" rel="noopener noreferrer" class="project-link"><i class="fa-solid fa-video"></i> Video</a>
+                        <a href="https://drive.google.com/file/d/17GGYJ8FghlptGciFFwujxth6CNdYcCT7/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="project-link"><i class="fa-solid fa-file-pdf"></i> Relazione</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Other Links -->
+            <div class="links-container" style="margin-top: 3rem;">
+                <div class="glass-card links-card scroll-reveal">
+                    <div class="link-item">
+                        <div class="link-info">
+                            <i class="fa-brands fa-github link-icon"></i>
+                            <div>
+                                <h4>Profilo GitHub</h4>
+                                <p>Esplora il mio codice sorgente e i miei repository pubblici.</p>
+                            </div>
+                        </div>
+                        <a href="https://github.com/cianfy" target="_blank" rel="noopener noreferrer" class="link-btn">Visita <i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+
+                    <div class="link-item">
+                        <div class="link-info">
+                            <i class="fa-solid fa-link link-icon"></i>
+                            <div>
+                                <h4>Raccolta Completa Link</h4>
+                                <p>Tutti i miei link, presentazioni e progetti raccolti in un unico spazio.</p>
+                            </div>
+                        </div>
+                        <a href="https://bit.ly/m/cianfy" target="_blank" rel="noopener noreferrer" class="link-btn">Apri Raccolta <i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="glass-card contact-card scroll-reveal">
+                <h2 class="section-title">Entriamo in <span class="gradient-text">Contatto</span></h2>
+                <p>Hai domande, idee da condividere o vuoi semplicemente scambiare due chiacchiere su scuola e tecnologia? Scrivimi un messaggio o seguimi sui miei canali social!</p>
+                <div class="contact-methods">
+                    <a href="mailto:cianfy@gmail.com" class="contact-method-card">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>Email</span>
+                        <p>cianfy@gmail.com</p>
+                    </a>
+                    <a href="https://t.me/cianfydamla" target="_blank" rel="noopener noreferrer" class="contact-method-card">
+                        <i class="fa-brands fa-telegram"></i>
+                        <span>Telegram</span>
+                        <p>@cianfydamla</p>
+                    </a>
+                    <a href="https://github.com/cianfy" target="_blank" rel="noopener noreferrer" class="contact-method-card">
+                        <i class="fa-brands fa-github"></i>
+                        <span>GitHub</span>
+                        <p>@cianfy</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 Cianfy. Realizzato con <i class="fa-solid fa-heart" style="color: #ff6b81;"></i>.</p>
+    </footer>
+
+    <!-- Custom Script -->
+    <script src="app.js"></script>
+</body>
+</html>
